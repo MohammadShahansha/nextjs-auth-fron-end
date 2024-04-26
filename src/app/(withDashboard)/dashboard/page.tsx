@@ -16,7 +16,10 @@ const DashboardPage = async () => {
             Loged in email: {session?.user?.email}
           </h1>
           <Image
-            src={session?.user?.image}
+            src={
+              session?.user?.image ||
+              "https://i.ibb.co/pRQqRH4/young-bearded-man-with-striped-shirt.jpg"
+            }
             alt="User Image"
             width={200}
             height={200}
